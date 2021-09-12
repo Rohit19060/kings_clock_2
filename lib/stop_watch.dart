@@ -3,18 +3,20 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class StopWatch extends StatefulWidget {
+  const StopWatch({Key? key}) : super(key: key);
+
   @override
   _StopWatchState createState() => _StopWatchState();
 }
 
 class _StopWatchState extends State<StopWatch> {
   String _display = "Stop Watch";
-  var _coreWatch = Stopwatch();
+  final _coreWatch = Stopwatch();
   bool _isRunning = false;
   bool _isPaused = true;
 
   void start() {
-    Timer(Duration(milliseconds: 1), running);
+    Timer(const Duration(milliseconds: 1), running);
   }
 
   void running() {
@@ -71,10 +73,10 @@ class _StopWatchState extends State<StopWatch> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SizedBox(),
+        const SizedBox(),
         Text(
           _display,
-          style: TextStyle(fontSize: 60.0, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 60.0, fontWeight: FontWeight.bold),
         ),
         ElevatedButton(
           style: ButtonStyle(
@@ -90,7 +92,7 @@ class _StopWatchState extends State<StopWatch> {
             foregroundColor: MaterialStateProperty.all(Colors.black),
             backgroundColor: MaterialStateProperty.all(Colors.white),
             padding: MaterialStateProperty.all(
-              EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+              const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             ),
           ),
           child: Text(
@@ -99,10 +101,7 @@ class _StopWatchState extends State<StopWatch> {
                     ? "Reset"
                     : "Stop"
                 : "Start",
-            style: TextStyle(
-                fontSize: 34.0,
-                color: Colors.black,
-                fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 34.0, fontWeight: FontWeight.bold),
           ),
           onPressed: _isRunning
               ? _isPaused
@@ -112,19 +111,17 @@ class _StopWatchState extends State<StopWatch> {
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
+          children: const [
             Text(
               "<<  Clock",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.black.withOpacity(0.6),
               ),
             ),
             Text(
               "Timer  >>",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.black.withOpacity(0.6),
               ),
             ),
           ],

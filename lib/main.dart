@@ -8,15 +8,17 @@ import 'timer.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays([]);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
   runApp(
-    King(),
+    const King(),
   );
 }
 
 class King extends StatelessWidget {
+  const King({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Wakelock.enable();
@@ -26,7 +28,7 @@ class King extends StatelessWidget {
           ThemeData(brightness: Brightness.dark, canvasColor: Colors.black),
       home: Scaffold(
         body: PageView(
-          children: [DigitalClock(), StopWatch(), TiMer()],
+          children: const [DigitalClock(), StopWatch(), TiMer()],
         ),
       ),
     );

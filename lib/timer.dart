@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class TiMer extends StatefulWidget {
+  const TiMer({Key? key}) : super(key: key);
+
   @override
   _TiMerState createState() => _TiMerState();
 }
@@ -28,53 +30,45 @@ class _TiMerState extends State<TiMer> {
       _timerCheck = false;
       _display = "";
       return Fluttertoast.showToast(
-          msg: "Please Insert a value",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          backgroundColor: Colors.black,
-          textColor: Colors.white,
-          fontSize: 16.0);
+        msg: "Please Insert a value",
+      );
     }
 
-    Timer.periodic(Duration(seconds: 1), (Timer t) {
+    Timer.periodic(const Duration(seconds: 1), (Timer tempTimer) {
       if (mounted) {
         setState(() {
           if (_timer < 1 || _timerCheck == false) {
             Fluttertoast.showToast(
-                msg: _timerCheck ? "Completed" : "Stopped",
-                toastLength: Toast.LENGTH_SHORT,
-                gravity: ToastGravity.BOTTOM,
-                backgroundColor: Colors.black,
-                textColor: Colors.white,
-                fontSize: 16.0);
-            t.cancel();
+              msg: _timerCheck ? "Completed" : "Stopped",
+            );
+            tempTimer.cancel();
             _timerCheck = false;
             _display = "";
           } else if (_timer < 60) {
             _display = (_timer < 10 ? "0" : "").toString() + _timer.toString();
             _timer = _timer - 1;
           } else if (_timer < 3600) {
-            int m = _timer ~/ 60;
-            int s = _timer - (60 * m);
-            _display = (m < 10 ? "0" : "").toString() +
-                m.toString() +
+            int tempMinute = _timer ~/ 60;
+            int tempSecond = _timer - (60 * tempMinute);
+            _display = (tempMinute < 10 ? "0" : "").toString() +
+                tempMinute.toString() +
                 ":" +
-                (s < 10 ? "0" : "").toString() +
-                s.toString();
+                (tempSecond < 10 ? "0" : "").toString() +
+                tempSecond.toString();
             _timer = _timer - 1;
           } else {
-            int h = _timer ~/ 3600;
-            int t = _timer - (3600 * h);
-            int m = t ~/ 60;
-            int s = t - (60 * m);
-            _display = (h < 10 ? "0" : "").toString() +
-                h.toString() +
+            int tempHour = _timer ~/ 3600;
+            int tempTimer = _timer - (3600 * tempHour);
+            int tempMinute = tempTimer ~/ 60;
+            int tempSecond = tempTimer - (60 * tempMinute);
+            _display = (tempHour < 10 ? "0" : "").toString() +
+                tempHour.toString() +
                 ":" +
-                (m < 10 ? "0" : "").toString() +
-                m.toString() +
+                (tempMinute < 10 ? "0" : "").toString() +
+                tempMinute.toString() +
                 ":" +
-                (s < 10 ? "0" : "").toString() +
-                s.toString();
+                (tempSecond < 10 ? "0" : "").toString() +
+                tempSecond.toString();
             _timer = _timer - 1;
           }
         });
@@ -86,6 +80,11 @@ class _TiMerState extends State<TiMer> {
     if (mounted) {
       setState(() {
         _timerCheck = false;
+        _hours = 00;
+        _mins = 00;
+        _seconds = 00;
+        _timer = 0;
+        _display = "";
       });
     }
   }
@@ -96,62 +95,59 @@ class _TiMerState extends State<TiMer> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(),
+        const SizedBox(),
         _timerCheck
             ? Text(
                 _display,
-                style: TextStyle(
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
+                style: const TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                ),
               )
-            : Container(
-                child: Text(
-                  "Timer",
-                  style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold),
+            : Form(
+                key: _form,
+                child: Table(
+                  children: [
+                    TableRow(children: [
+                      Container(),
+                      TextFormField(
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          labelText: _hours > 0 ? _hours.toString() : "Hours",
+                          labelStyle:
+                              const TextStyle(fontWeight: FontWeight.bold),
+                          border: const OutlineInputBorder(),
+                        ),
+                        onSaved: (val) =>
+                            _hours = int.tryParse(val ?? "0") ?? 0,
+                      ),
+                      TextFormField(
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          labelText: _mins > 0 ? _mins.toString() : "Minutes",
+                          labelStyle:
+                              const TextStyle(fontWeight: FontWeight.bold),
+                          border: const OutlineInputBorder(),
+                        ),
+                        onSaved: (val) => _mins = int.tryParse(val ?? "0") ?? 0,
+                      ),
+                      TextFormField(
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          labelText:
+                              _seconds > 0 ? _seconds.toString() : "Seconds",
+                          labelStyle:
+                              const TextStyle(fontWeight: FontWeight.bold),
+                          border: const OutlineInputBorder(),
+                        ),
+                        onSaved: (val) =>
+                            _seconds = int.tryParse(val ?? "0") ?? 0,
+                      ),
+                      Container()
+                    ]),
+                  ],
                 ),
               ),
-        Form(
-          key: _form,
-          child: Table(
-            children: [
-              TableRow(children: [
-                Container(),
-                TextFormField(
-                  initialValue: "0",
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    labelText: _hours > 0 ? _hours.toString() : "Hours",
-                    labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                    border: OutlineInputBorder(),
-                  ),
-                  onSaved: (val) => _hours = int.tryParse(val ?? "0") ?? 0,
-                ),
-                TextFormField(
-                  initialValue: "0",
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    labelText: _mins > 0 ? _mins.toString() : "Minutes",
-                    labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                    border: OutlineInputBorder(),
-                  ),
-                  onSaved: (val) => _mins = int.tryParse(val ?? "0") ?? 0,
-                ),
-                TextFormField(
-                  initialValue: "0",
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    labelText: _seconds > 0 ? _seconds.toString() : "Seconds",
-                    labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                    border: OutlineInputBorder(),
-                  ),
-                  onSaved: (val) => _seconds = int.tryParse(val ?? "0") ?? 0,
-                ),
-                Container()
-              ]),
-            ],
-          ),
-        ),
         ElevatedButton(
           style: ButtonStyle(
             shape: MaterialStateProperty.all(
@@ -166,25 +162,25 @@ class _TiMerState extends State<TiMer> {
             foregroundColor: MaterialStateProperty.all(Colors.black),
             backgroundColor: MaterialStateProperty.all(Colors.white),
             padding: MaterialStateProperty.all(
-              EdgeInsets.all(15),
+              const EdgeInsets.all(15),
             ),
           ),
           child: _timerCheck
-              ? Column(children: [
+              ? Column(children: const [
                   Icon(
                     Icons.highlight_off,
-                    size: 100,
+                    size: 50,
                   ),
                   Text(
                     "Don't Swipe When\n Timer is Running",
                     textAlign: TextAlign.center,
                     softWrap: true,
-                    style: TextStyle(fontSize: 26),
+                    style: TextStyle(fontSize: 20),
                   ),
                 ])
-              : Icon(
+              : const Icon(
                   Icons.play_circle_outline,
-                  size: 100,
+                  size: 50,
                 ),
           onPressed: _timerCheck
               ? stop
@@ -196,12 +192,11 @@ class _TiMerState extends State<TiMer> {
                 },
         ),
         Row(
-          children: [
+          children: const [
             Text(
               "<<  Stop Watch & Clock",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.black.withOpacity(0.6),
               ),
             ),
           ],

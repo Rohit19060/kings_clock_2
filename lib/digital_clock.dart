@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class DigitalClock extends StatefulWidget {
+  const DigitalClock({Key? key}) : super(key: key);
+
   @override
   _DigitalClockState createState() => _DigitalClockState();
 }
@@ -10,14 +12,13 @@ class DigitalClock extends StatefulWidget {
 class _DigitalClockState extends State<DigitalClock> {
   @override
   void initState() {
-    Timer.periodic(Duration(seconds: 1), (V) {
+    Timer.periodic(const Duration(seconds: 1), (Timer tempTimer) {
       if (mounted) {
         setState(() {
           _hour0();
           _hour1();
           _minute0();
           _minute1();
-          _ampm();
           _sec();
           _date();
         });
@@ -52,11 +53,6 @@ class _DigitalClockState extends State<DigitalClock> {
     return "${sec1.toInt()}$sec0";
   }
 
-  _ampm() {
-    var ampm = DateTime.now().hour < 12 ? "AM" : "PM";
-    return "$ampm";
-  }
-
   _date() {
     var day = DateTime.now().day.toInt();
     var month = DateTime.now().month.toInt();
@@ -66,11 +62,11 @@ class _DigitalClockState extends State<DigitalClock> {
 
   Widget handle(d, w, h) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
       width: w,
       height: h,
       decoration: BoxDecoration(
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black12,
             blurRadius: 20.0,
@@ -92,7 +88,8 @@ class _DigitalClockState extends State<DigitalClock> {
         child: Center(
           child: Text(
             d,
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            style: const TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.black),
           ),
         ),
       ),
@@ -105,37 +102,32 @@ class _DigitalClockState extends State<DigitalClock> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SizedBox(),
-        Text(
+        const SizedBox(),
+        const Text(
           "Digital Clock",
           style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
         ),
         Text(
           _date(),
-          style: TextStyle(fontSize: 24),
-        ),
-        Text(
-          _sec(),
-          style: TextStyle(fontSize: 40),
+          style: const TextStyle(fontSize: 24),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             handle(_hour0(), size.width * 0.1, 185.0),
             handle(_hour1(), size.width * 0.1, 185.0),
-            handle(" : ", size.width * 0.02, 40.0),
+            handle(_sec(), size.width * 0.03, 40.0),
             handle(_minute0(), size.width * 0.1, 185.0),
             handle(_minute1(), size.width * 0.1, 185.0),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
+          children: const [
             Text(
               "Stop Watch & Timer >>",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.black.withOpacity(0.6),
               ),
             ),
           ],

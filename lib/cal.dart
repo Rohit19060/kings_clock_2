@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Calendar extends StatelessWidget {
+  const Calendar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -10,8 +12,9 @@ class Calendar extends StatelessWidget {
             Table(children: [
               TableRow(children: [
                 Container(
-                  padding: EdgeInsets.only(top: 14.5, bottom: 14.5, left: 30),
-                  child: Text(
+                  padding:
+                      const EdgeInsets.only(top: 14.5, bottom: 14.5, left: 30),
+                  child: const Text(
                     "2020",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -20,14 +23,14 @@ class Calendar extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25.0),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft,
                         colors: [Colors.black12, Colors.black38]),
                   ),
                 ),
                 Container(
-                  child: Text(
+                  child: const Text(
                     "Calender",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -36,18 +39,19 @@ class Calendar extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25.0),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                         begin: Alignment.centerLeft,
                         end: Alignment.centerRight,
                         colors: [Colors.black12, Colors.black38]),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 2),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 2),
                 ),
                 Container(),
                 Container(),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Jun(30)",
                       style: TextStyle(
@@ -56,17 +60,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sep(30)",
                       style: TextStyle(
@@ -75,17 +80,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Jan(31)",
                       style: TextStyle(
@@ -94,7 +100,7 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
@@ -102,10 +108,11 @@ class Calendar extends StatelessWidget {
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Oct(31)",
                       style: TextStyle(
@@ -114,17 +121,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "May(31)",
                       style: TextStyle(
@@ -133,16 +141,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Feb(29)",
                       style: TextStyle(
@@ -151,7 +160,7 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
@@ -159,10 +168,11 @@ class Calendar extends StatelessWidget {
                       left: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mar(31)",
                       style: TextStyle(
@@ -171,21 +181,22 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Dates",
                       style: TextStyle(
@@ -194,28 +205,30 @@ class Calendar extends StatelessWidget {
                           color: Colors.deepOrangeAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  decoration: const BoxDecoration(),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Dec(31)",
                       style: TextStyle(
@@ -224,16 +237,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Apr(30)",
                       style: TextStyle(
@@ -242,19 +256,20 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Aug(31)",
                       style: TextStyle(
@@ -263,17 +278,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Nov(30)",
                       style: TextStyle(
@@ -282,13 +298,14 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
@@ -298,23 +315,24 @@ class Calendar extends StatelessWidget {
                 Container(),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Jul(31)",
                       style: TextStyle(
@@ -323,13 +341,14 @@ class Calendar extends StatelessWidget {
                           color: Colors.redAccent),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(),
                 Container(),
@@ -338,7 +357,7 @@ class Calendar extends StatelessWidget {
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "1",
                       style: TextStyle(
@@ -347,17 +366,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "8",
                       style: TextStyle(
@@ -366,17 +386,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "15",
                       style: TextStyle(
@@ -385,17 +406,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "22",
                       style: TextStyle(
@@ -404,17 +426,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "29",
                       style: TextStyle(
@@ -423,17 +446,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -442,7 +466,7 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
@@ -450,10 +474,11 @@ class Calendar extends StatelessWidget {
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -462,16 +487,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -480,7 +506,7 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
@@ -488,10 +514,11 @@ class Calendar extends StatelessWidget {
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -500,17 +527,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -519,17 +547,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -538,17 +567,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -557,18 +587,19 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       top: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "2",
                       style: TextStyle(
@@ -577,16 +608,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "9",
                       style: TextStyle(
@@ -595,16 +627,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "16",
                       style: TextStyle(
@@ -613,16 +646,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "23",
                       style: TextStyle(
@@ -631,16 +665,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "30",
                       style: TextStyle(
@@ -649,16 +684,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -667,17 +703,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -686,15 +723,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -703,17 +741,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -722,16 +761,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -740,16 +780,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -758,16 +799,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -776,17 +818,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "3",
                       style: TextStyle(
@@ -795,16 +838,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "10",
                       style: TextStyle(
@@ -813,16 +857,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "17",
                       style: TextStyle(
@@ -831,16 +876,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "24",
                       style: TextStyle(
@@ -849,16 +895,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "31",
                       style: TextStyle(
@@ -867,16 +914,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -885,17 +933,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -904,15 +953,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -921,17 +971,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -940,16 +991,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -958,16 +1010,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -976,16 +1029,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -994,17 +1048,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "4",
                       style: TextStyle(
@@ -1013,16 +1068,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "11",
                       style: TextStyle(
@@ -1031,16 +1087,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "18",
                       style: TextStyle(
@@ -1049,16 +1106,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "25",
                       style: TextStyle(
@@ -1067,31 +1125,33 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -1100,17 +1160,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -1119,15 +1180,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -1136,17 +1198,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -1155,16 +1218,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -1173,16 +1237,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -1191,16 +1256,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -1209,17 +1275,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "5",
                       style: TextStyle(
@@ -1228,16 +1295,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "12",
                       style: TextStyle(
@@ -1246,16 +1314,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "19",
                       style: TextStyle(
@@ -1264,16 +1333,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "26",
                       style: TextStyle(
@@ -1282,31 +1352,33 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -1315,17 +1387,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -1334,15 +1407,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -1351,17 +1425,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -1370,16 +1445,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -1388,16 +1464,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -1406,16 +1483,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -1424,17 +1502,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "6",
                       style: TextStyle(
@@ -1443,16 +1522,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "13",
                       style: TextStyle(
@@ -1461,16 +1541,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "20",
                       style: TextStyle(
@@ -1479,16 +1560,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "27",
                       style: TextStyle(
@@ -1497,31 +1579,33 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -1530,17 +1614,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -1549,15 +1634,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -1566,17 +1652,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -1585,16 +1672,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -1603,16 +1691,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -1621,16 +1710,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -1639,17 +1729,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
               TableRow(children: [
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "7",
                       style: TextStyle(
@@ -1658,16 +1749,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "14",
                       style: TextStyle(
@@ -1676,16 +1768,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "21",
                       style: TextStyle(
@@ -1694,16 +1787,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "28",
                       style: TextStyle(
@@ -1712,31 +1806,33 @@ class Calendar extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sun",
                       style: TextStyle(
@@ -1745,17 +1841,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Mon",
                       style: TextStyle(
@@ -1764,15 +1861,16 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Tue",
                       style: TextStyle(
@@ -1781,17 +1879,18 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       left: BorderSide(width: 1.5),
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Wed",
                       style: TextStyle(
@@ -1800,16 +1899,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Thurs",
                       style: TextStyle(
@@ -1818,16 +1918,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Fri",
                       style: TextStyle(
@@ -1836,16 +1937,17 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                       right: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
                 Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Sat",
                       style: TextStyle(
@@ -1854,12 +1956,13 @@ class Calendar extends StatelessWidget {
                           color: Colors.blue),
                     ),
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(width: 1.5),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
                 ),
               ]),
             ]),
