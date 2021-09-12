@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">🌟 King's Clock 🌟</h1>
-<p align="center">App that have Functionality Related to Clock like Timer, Stopwatch </p>
+<p align="center">An app that has Functionality Related to Clock like Timer, Stopwatch</p>
 
 <p align="center">
 <a href="https://github.com/Rohit19060/kings_clock_2/blob/master/LICENSE" title="License">
