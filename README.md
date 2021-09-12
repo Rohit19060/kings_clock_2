@@ -106,7 +106,7 @@ flutter run/Flutter run --release
 
 - 🌌 [Profile](https://github.com/Rohit19060 "Rohit Jain")
 
-- 🏮 [Email](mailto:rohitjain19060@gmail.com?subject=Hi%20from%20Save%20You "Hi!")
+- 🏮 [Email](mailto:rohitjain19060@gmail.com?subject=Hi%20from%20Kings%20Clock "Hi!")
 
 - 🦁 [Website](https://kingtechnologies.in "Welcome")
 
