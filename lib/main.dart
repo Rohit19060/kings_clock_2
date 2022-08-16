@@ -11,9 +11,7 @@ void main() {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
-  runApp(
-    const King(),
-  );
+  runApp(const King());
 }
 
 class King extends StatelessWidget {
@@ -23,7 +21,11 @@ class King extends StatelessWidget {
   Widget build(BuildContext context) {
     Wakelock.enable();
     return MaterialApp(
-      theme: ThemeData(brightness: Brightness.light, canvasColor: Colors.white),
+      theme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.light,
+        canvasColor: Colors.white,
+      ),
       darkTheme:
           ThemeData(brightness: Brightness.dark, canvasColor: Colors.black),
       home: Scaffold(
