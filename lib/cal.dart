@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Calendar extends StatelessWidget {
-  const Calendar({Key? key}) : super(key: key);
+  const Calendar({super.key});
 
   @override
   Widget build(BuildContext context) => SafeArea(

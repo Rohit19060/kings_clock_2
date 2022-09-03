@@ -9,13 +9,15 @@ import 'timer.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeRight,
+    DeviceOrientation.landscapeLeft,
+  ]);
   runApp(const King());
 }
 
 class King extends StatelessWidget {
-  const King({Key? key}) : super(key: key);
+  const King({super.key});
 
   @override
   Widget build(BuildContext context) {

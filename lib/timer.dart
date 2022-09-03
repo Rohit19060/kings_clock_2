@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class TiMer extends StatefulWidget {
-  const TiMer({Key? key}) : super(key: key);
+  const TiMer({super.key});
 
   @override
   State<TiMer> createState() => _TiMerState();

@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kings_clock_2/main.dart';
+import 'package:kings_clock/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (tester) async {

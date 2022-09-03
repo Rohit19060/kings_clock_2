@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "kings_clock_2",
+            "name": "kings_clock",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "kings_clock_2 (profile mode)",
+            "name": "kings_clock (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

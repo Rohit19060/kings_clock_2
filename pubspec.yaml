@@ -1,4 +1,4 @@
-name: kings_clock_2
+name: kings_clock
 description: A new Flutter project.
 
 publish_to: "none"
@@ -6,7 +6,7 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.6 <3.0.0"
 
 dependencies:
   cupertino_icons: ^1.0.5

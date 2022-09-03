@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class StopWatch extends StatefulWidget {
-  const StopWatch({Key? key}) : super(key: key);
+  const StopWatch({super.key});
 
   @override
   State<StopWatch> createState() => _StopWatchState();
