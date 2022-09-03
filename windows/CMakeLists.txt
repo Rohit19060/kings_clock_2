@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(kings_clock_2 LANGUAGES CXX)
+project(kings_clock LANGUAGES CXX)
 
-set(BINARY_NAME "kings_clock_2")
+set(BINARY_NAME "kings_clock")
 
 cmake_policy(SET CMP0063 NEW)
 

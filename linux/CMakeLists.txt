@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "kings_clock_2")
-set(APPLICATION_ID "com.example.kings_clock_2")
+set(BINARY_NAME "kings_clock")
+set(APPLICATION_ID "com.example.kings_clock")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -1,6 +1,6 @@
 {
-    "name": "kings_clock_2",
-    "short_name": "kings_clock_2",
+    "name": "kings_clock",
+    "short_name": "kings_clock",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

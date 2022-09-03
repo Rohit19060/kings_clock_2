@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class DigitalClock extends StatefulWidget {
-  const DigitalClock({Key? key}) : super(key: key);
+  const DigitalClock({super.key});
 
   @override
   State<DigitalClock> createState() => _DigitalClockState();
