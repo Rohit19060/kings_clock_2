@@ -35,8 +35,7 @@ class _DigitalClockState extends State<DigitalClock> {
 
   String _minute1() => '${DateTime.now().minute % 10}';
 
-  String _sec() =>
-      '${DateTime.now().second ~/ 10}${DateTime.now().second % 10}';
+  String _sec() => '${DateTime.now().second ~/ 10}${DateTime.now().second % 10}';
 
   String _date() {
     final now = DateTime.now();
@@ -55,23 +54,19 @@ class _DigitalClockState extends State<DigitalClock> {
             )
           ],
           borderRadius: BorderRadius.circular(50.0),
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Colors.black.withOpacity(0.2),
-                Colors.white.withOpacity(0.6),
-                Colors.white,
-                Colors.white.withOpacity(0.6),
-                Colors.black.withOpacity(0.2),
-              ]),
+          gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
+            Colors.black.withOpacity(0.2),
+            Colors.white.withOpacity(0.6),
+            Colors.white,
+            Colors.white.withOpacity(0.6),
+            Colors.black.withOpacity(0.2),
+          ]),
         ),
         child: FittedBox(
           child: Center(
             child: Text(
               d,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold, color: Colors.black),
+              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
             ),
           ),
         ),
@@ -102,9 +97,9 @@ class _DigitalClockState extends State<DigitalClock> {
             handle(_minute1(), size.width * 0.1, 185.0),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: const [
+          children: [
             Text(
               'Stop Watch & Timer >>',
               style: TextStyle(

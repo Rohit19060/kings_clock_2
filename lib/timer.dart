@@ -50,16 +50,14 @@ class _TiMerState extends State<TiMer> {
           } else if (_timer < 3600) {
             final tempMinute = _timer ~/ 60;
             final tempSecond = _timer - (60 * tempMinute);
-            _display =
-                "${tempMinute < 10 ? "0" : ""}$tempMinute:${tempSecond < 10 ? "0" : ""}$tempSecond";
+            _display = "${tempMinute < 10 ? "0" : ""}$tempMinute:${tempSecond < 10 ? "0" : ""}$tempSecond";
             _timer = _timer - 1;
           } else {
             final tempHour = _timer ~/ 3600;
             final tempTimer = _timer - (3600 * tempHour);
             final tempMinute = tempTimer ~/ 60;
             final tempSecond = tempTimer - (60 * tempMinute);
-            _display =
-                "${tempHour < 10 ? "0" : ""}$tempHour:${tempMinute < 10 ? "0" : ""}$tempMinute:${tempSecond < 10 ? "0" : ""}$tempSecond";
+            _display = "${tempHour < 10 ? "0" : ""}$tempHour:${tempMinute < 10 ? "0" : ""}$tempMinute:${tempSecond < 10 ? "0" : ""}$tempSecond";
             _timer = _timer - 1;
           }
         });
@@ -105,8 +103,7 @@ class _TiMerState extends State<TiMer> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         labelText: _hours > 0 ? _hours.toString() : 'Hours',
-                        labelStyle:
-                            const TextStyle(fontWeight: FontWeight.bold),
+                        labelStyle: const TextStyle(fontWeight: FontWeight.bold),
                         border: const OutlineInputBorder(),
                       ),
                       onSaved: (val) => _hours = int.tryParse(val ?? '0') ?? 0,
@@ -115,8 +112,7 @@ class _TiMerState extends State<TiMer> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         labelText: _mins > 0 ? _mins.toString() : 'Minutes',
-                        labelStyle:
-                            const TextStyle(fontWeight: FontWeight.bold),
+                        labelStyle: const TextStyle(fontWeight: FontWeight.bold),
                         border: const OutlineInputBorder(),
                       ),
                       onSaved: (val) => _mins = int.tryParse(val ?? '0') ?? 0,
@@ -124,14 +120,11 @@ class _TiMerState extends State<TiMer> {
                     TextFormField(
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        labelText:
-                            _seconds > 0 ? _seconds.toString() : 'Seconds',
-                        labelStyle:
-                            const TextStyle(fontWeight: FontWeight.bold),
+                        labelText: _seconds > 0 ? _seconds.toString() : 'Seconds',
+                        labelStyle: const TextStyle(fontWeight: FontWeight.bold),
                         border: const OutlineInputBorder(),
                       ),
-                      onSaved: (val) =>
-                          _seconds = int.tryParse(val ?? '0') ?? 0,
+                      onSaved: (val) => _seconds = int.tryParse(val ?? '0') ?? 0,
                     ),
                     Container()
                   ]),
@@ -164,7 +157,7 @@ class _TiMerState extends State<TiMer> {
                     }
                   },
             child: _timerCheck
-                ? Column(children: const [
+                ? const Column(children: [
                     Icon(
                       Icons.highlight_off,
                       size: 50,
@@ -181,8 +174,8 @@ class _TiMerState extends State<TiMer> {
                     size: 50,
                   ),
           ),
-          Row(
-            children: const [
+          const Row(
+            children: [
               Text(
                 '<<  Stop Watch & Clock',
                 style: TextStyle(

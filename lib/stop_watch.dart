@@ -100,13 +100,12 @@ class _StopWatchState extends State<StopWatch> {
                       ? 'Reset'
                       : 'Stop'
                   : 'Start',
-              style:
-                  const TextStyle(fontSize: 34.0, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 34.0, fontWeight: FontWeight.bold),
             ),
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Text(
                 '<<  Clock',
                 style: TextStyle(
